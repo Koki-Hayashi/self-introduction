@@ -1,0 +1,33 @@
+.main-content-loader {
+	@extend %loader_base;
+	position: absolute;
+	margin: auto auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 16px solid $mid-gray;
+	border-top: 16px solid $dark-purple;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px !important;
+}
+
+.loader {
+	@extend %loader_base;
+	border: 8px solid $mid-gray;
+	border-top: 8px solid $dark-purple;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+}
+
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+%loader_base {
+	animation: spin 1s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+}

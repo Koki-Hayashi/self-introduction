@@ -1,0 +1,26 @@
+#intellij
+.idea/
+*.iml
+.pmd
+
+#log file
+*.log
+
+#node
+npm-debug.log
+node_modules/*
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+# stats
+stats.html
+stats.json
+
+# webpack
+index.html
+index.css
+.happypack
+bundle.js*

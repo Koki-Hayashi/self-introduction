@@ -1,0 +1,14 @@
+*[data-tips]:hover:after{
+	font-size: 16px;
+	background: $white;
+	border: 1px solid $mid-gray;
+	display: inline;
+	border-radius: 5px;
+	color: $black;
+	content: attr(data-tips);
+	padding: 10px 15px;
+	margin: -50px 0 0 -50px;
+	position: absolute;
+	z-index: 999; // enough big
+	width: auto;
+}
