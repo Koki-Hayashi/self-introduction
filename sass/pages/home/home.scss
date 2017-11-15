@@ -1,3 +1,11 @@
 .home {
-	color: red;
+	&__title {
+		font-size: $big;
+		font-weight: $light;
+		color: $red;
+	}
+
+	&__save-btn {
+		@extend %round-light-gray-btn;
+	}
 }

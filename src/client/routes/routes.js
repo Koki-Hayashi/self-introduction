@@ -1,6 +1,6 @@
 import React from "react";
 import {IndexRoute, Route} from "react-router";
-import * as pages from "../pages";
+import * as pages from "../pages/index";
 
 const routes = (
     <Route path="/" component={pages.Root}>

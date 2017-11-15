@@ -1,0 +1,49 @@
+%round-light-gray-btn {
+	@extend %round-btn;
+	@extend %light-gray-btn;
+	border: 1px solid $light-gray;
+
+	&:hover {
+		background-color: $mid-gray;
+	}
+}
+
+%square-light-gray-btn {
+	@extend %square-btn;
+	@extend %light-gray-btn;
+}
+
+
+%light-gray-btn {
+	color: $purple;
+	background-color: $white;
+	border-color: $light-gray;
+	text-decoration-line: underline;
+
+	&:hover {
+		background: $light-gray;
+	}
+}
+
+
+%square-btn {
+	font-weight: $bold;
+	font-size: 16px;
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+%round-btn {
+	font-weight: $bold;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}

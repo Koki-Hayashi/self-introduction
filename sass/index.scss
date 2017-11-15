@@ -1,4 +1,9 @@
-@import "pages/index";
+/*
+ * Importing order matters
+ */
+
 @import "base/index";
 @import "state/index";
 @import "design/index";
+@import "parts/index";
+@import "pages/index";

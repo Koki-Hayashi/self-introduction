@@ -10,7 +10,7 @@ const fileName = isProd ? 'bundle.js.[hash]' : 'bundle.js';
 const config = {
   entry: [
 	'babel-polyfill',
-	'./src/index.js'
+	'./src/client/index.js'
   ],
   output: {path: __dirname + '/public/', filename: 'js/' + fileName},
   module: {
@@ -66,7 +66,13 @@ const config = {
 	  inject: 'body'
 	})
   ],
-  devtool: isProd ? '' : 'source-map'
+  devtool: isProd ? '' : '',
+  node: { // TODO This block is necessary not to have errors from webpack, but I don't know why necessary at the moment. Sorry.
+	net: 'empty',
+	tls: 'empty',
+	dns: 'empty',
+	fs: 'empty'
+  }
 };
 
 
